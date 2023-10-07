@@ -1,68 +1,53 @@
 # AtharvaShinde_INBT04755_September2023
 # THIS PROJECT IS MADE FOR INTERNSHIP iNeuBytes
-# IMDb Movie Review Sentiment Analysis
 
-This project involves data cleaning, tokenization, and Naive Bayes classification on the IMDb movie review dataset. The goal is to analyze and predict the sentiment (positive or negative) of movie reviews.
 
-## Table of Contents
+here is the preprocessed review (preprocessed_imdb.csv) file : https://drive.google.com/file/d/1-5NMjrzZqoWOPbkBL9n8SPKScrkWoDcg/view?usp=sharing
 
-- [Introduction](#introduction)
-- [Data Cleaning](#data-cleaning)
-- [Tokenization](#tokenization)
-- [Sentiment Analysis](#sentiment-analysis)
-- [Data Visualization](#data-visualization)
-- [Model Evaluation](#model-evaluation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Note : Make sure that yyou changed the paths in the code according to where your preprocessed_imdb.csv is saved.
 
-## Introduction
 
-In this project, we perform the following tasks:
+#IMDb Sentiment Analysis
+This project focuses on sentiment analysis using IMDb movie reviews. The goal is to classify movie reviews as either positive or negative based on the sentiment expressed in the text.
 
-- Data Cleaning: We handle missing values, remove duplicates, and verify the consistency of sentiment labels.
+Dataset
+The IMDb dataset used in this project contains preprocessed movie reviews. The dataset was cleaned and preprocessed to remove any unnecessary information.
 
-- Tokenization: We tokenize the text data using the NLTK library, removing stopwords, special characters, and converting words to lowercase. The tokenized reviews are then used to create features.
+Files Included:
+preprocessed_imdb.csv: The cleaned and preprocessed IMDb dataset.
+Requirements
+Make sure you have the following libraries installed to run the code:
 
-- Sentiment Analysis: We train a Naive Bayes classifier using both Bag-of-Words (BoW) and TF-IDF features to predict sentiment labels.
+pandas: Data manipulation library
+nltk: Natural Language Toolkit for text preprocessing
+sklearn: Scikit-learn for machine learning
+matplotlib: Visualization library
+seaborn: Data visualization library
+wordcloud: Library for generating word clouds
+You can install these libraries using pip install <library_name>.
 
-- Data Visualization: We visualize the distribution of sentiment labels, word frequency, and generate word clouds.
+Code Usage
+Clone this GitHub repository to your local machine.
+Download the preprocessed IMDb dataset (preprocessed_imdb.csv) from the provided Google Drive link.
+Place the preprocessed_imdb.csv file in the same directory as the project code.
+Open the Jupyter notebook or Python script and run the code.
+Project Structure
+The project code is organized as follows:
 
-- Model Evaluation: We evaluate the model using accuracy, precision-recall curves, and ROC curves.
+Data loading and preprocessing: Cleaning and preprocessing of the IMDb dataset.
+Feature extraction: Using TF-IDF (Term Frequency-Inverse Document Frequency) for feature extraction.
+Sentiment analysis: Training a Multinomial Naive Bayes classifier for sentiment analysis.
+Visualization: Visualizing sentiment distribution, word clouds, top frequent words, confusion matrix, precision-recall curve, and ROC curve.
+Results
+The project provides the following results:
 
-## Data Cleaning
-
-- Handling missing values.
-- Removing duplicate rows.
-- Ensuring sentiment labels are 'positive' and 'negative.'
-
-## Tokenization
-
-- Removing HTML tags and special characters.
-- Converting text to lowercase.
-- Tokenizing the text.
-- Removing stopwords.
-- Stemming the words.
-
-## Sentiment Analysis
-
-- Splitting the dataset into training and testing sets.
-- Extracting features using Bag-of-Words (BoW) and TF-IDF.
-- Training a Naive Bayes classifier.
-- Evaluating the model's performance.
-
-## Data Visualization
-
-- Visualizing the distribution of sentiment labels.
-- Generating word cloud visualizations.
-- Illustrating the top N most frequent words.
-
-## Model Evaluation
-
-- Calculating accuracy, precision, recall, and F1-score.
-- Visualizing the confusion matrix.
-- Plotting precision-recall and ROC curves.
-
+Accuracy of sentiment analysis.
+Sentiment distribution visualization.
+Word cloud of most frequent words.
+Top N most frequent words.
+Confusion matrix.
+Precision-recall curve.
+ROC curve.
 ## Usage
 
 1. Clone the repository:
